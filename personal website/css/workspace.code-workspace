@@ -1,0 +1,32 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\..\\افكار"
+		},
+		{
+			"path": "..\\..\\..\\slidebar"
+		},
+		{
+			"path": "..\\..\\..\\..\\tutorial\\New folder"
+		},
+		{
+			"path": "..\\..\\.."
+		},
+		{
+			"path": "..\\..\\..\\..\\tutorial"
+		},
+		{
+			"path": "..\\..\\..\\..\\project2"
+		},
+		{
+			"path": "..\\..\\..\\..\\مجلد جديد (5)\\axit ###\\مجلد جديد"
+		},
+		{
+			"path": "E:\\portfolio-sass-master\\portfolio-sass-master"
+		}
+	],
+	"settings": {
+		"compile-hero.disable-compile-files-on-did-save-code": true,
+		"liveServer.settings.multiRootWorkspaceName": "افكار"
+	}
+}
