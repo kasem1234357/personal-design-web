@@ -1,0 +1,243 @@
+header
+{
+    height: 70px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 !important;
+    z-index: 10;
+    flex-basis: 100%;
+}
+
+.filter a{
+    color: var(--secondcolor) ;
+}
+.up
+{
+    animation: animatex 2s linear;
+}
+@keyframes animatex
+{
+    0%
+    {
+        transform: translateY(0px);
+    }
+    100%
+    {
+        transform: translateY(100%);
+    }
+}
+.main
+{
+    background: url(../img/5.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.text6 {
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    z-index: 9;
+}
+.text6 h2 {
+    font-size: 70px;
+    color: #fff
+}
+.text6 p {
+    font-size: 25px;
+    padding: 10px 20px;
+    color: #999;
+}
+.text6 button {
+    background: transparent;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    filter: hue-rotate(0);
+
+}
+.text6 button span
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    animation:  animate 5s linear infinite;
+    background: #000;
+    z-index: -1;
+    box-shadow: 0px 0px 20px rgba(255, 255,255, 0.05),
+                0px 0px 40px rgba(255, 255,255, 0.1),
+                0px 0px 80px  rgba(255, 255,255, 0.15),
+                0px 0px 120px  rgba(255, 255,255, 0.2);
+}
+@keyframes animate
+{
+    0%
+    {
+        top: 0;
+        left: -100%;
+        width: 100%;
+    }
+    50%
+    {
+        top: 0;
+        left: 100%;
+        width: 100%;
+    }
+    100%
+    {
+        top: 0;
+        left: -100%;
+        width: 100%;
+    }
+}
+.overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0,0, 0.5);
+    z-index: 1;
+}
+.filter {
+    width: 90%;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.filter ul {
+
+    list-style: none;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.filter ul li {
+    display: inline-block;
+    min-width: 120px;
+    flex: 1;
+    color: var(--secondcolor);
+    margin-top: 10px;
+    cursor: pointer;
+}
+.filter ul li:hover .t::after
+{
+    background: #ff523b;
+}
+.filter ul li .t
+{
+    padding-top: 20px;
+}
+.filter ul li .t::after
+{
+    background: #333;
+    transition: 0.5s ease-in-out;
+}
+.projectsx
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+}
+.imgbox
+{
+    margin: 10px 0;
+    max-width: 320px;
+    overflow: hidden;
+    padding: 10px;
+    transition:1.5s;
+    position: relative;
+    transition: 0.5s;
+}
+.imgbox:hover img
+{
+ transform: scale(1.1);
+}
+.imgbox:hover .texthide
+{
+ transform: translateY(-100%);
+}
+img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    opacity: 1;
+}
+.none
+{
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+.nav-link
+{
+    color: #fff !important;
+}
+.texthide
+{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0,0, 0.5);
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    color: #999;
+    transition: 0.5s;
+}
+@media( max-width :600px)
+{
+    .text6 h2
+    {
+        font-size: 30px !important;
+    }
+    .text6 p 
+    {
+        font-size: 20px;
+    }
+}
+.top
+{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    background: rgba(76, 0, 255, 0.5);
+    z-index: 10;
+    opacity: 0;
+    cursor: none;
+    transition: 0.5s;
+    text-align: center;
+    color: #fff;
+    line-height: 50px;
+}
+.top-active
+{
+    opacity: 1;
+    cursor: pointer;
+}
